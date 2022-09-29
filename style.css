@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-size: 25 rem;
+    font-family: 'Prompt', sans-serif;
+    color: rgb(4, 196, 106);
+}
+.boder-color{
+    border-color: rgb(5, 175, 118);
+}
+.set-min{
+    min-height: 15vw;
+}
+
+
+.h5{
+    font-size: 1em;
+}
+.warp{
+    transition: 770ms cubic-bezier(0.51, 0.04, 0.12, 0.99);
+}
+
+.open .warp{
+    transform: translateX(-20vw);
+}
+
+.min{
+    min-height: 5vw;
+}
+
+
+.h3{
+    font-size: 1.5vw;
+}
+.h4{
+    font-size: 1vw;
+}
+

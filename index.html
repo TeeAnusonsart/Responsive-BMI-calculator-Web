@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Iberbboo</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container-fluid my-5 d-flex justify-content-center align-items-center h1 border-bottom border-3 border-secondary">
+    <div class="mb-4">คำนวณBMI </div>
+  </div>
+  <div class="container-xl my-4 border w-lg-50 h-75">
+    <div class="my-4">
+      ป้อนน้ำหนัก<input class="form-control " id="weight" type="text" placeholder="ป้อนน้ำหนัก(กิโลกรัม)">
+    </div>
+    <div class="my-4">
+      ป้อนส่วนสูง<input class="form-control " id="height" type="text" placeholder="ป้อนส่วนสูง(เซนติเมตร)">
+    </div>
+    <div class="my-4 d-flex justify-content-center align-items-center">
+      <button type="button" class="btn btn-success w-50" id="cal-button">คำนวณ</button>
+    </div>
+
+    <div class="container border mb-2 p-2 Warpper ">
+      <p class="my-3 d-flex justify-content-center align-items-center h1">
+        ค่า BMI
+      </p>
+      <div class="d-flex justify-content-center align-items-center mt-5 set-min">
+        
+        <img src="" id="img" class="img-responsive">
+      
+        <p class="my-3 d-flex justify-content-center align-items-center h1 text-center " id="output">    
+        </p>
+        
+      </div>
+
+      <div class="container warp mt-5 border ">
+        <table class="table">
+          <thead>
+            <tr class=" h3">
+              <th scope="col">ค่าอยู่ในเกณฑ์</th>
+              <th scope="col">ค่า BMI</th>
+              <th scope="col">ภาวะเสื่องต่อโรค</th>
+            </tr>
+          </thead>
+          <tbody class="h4">
+            <tr id="1">
+              <td>ต่ำกว่าเกณฑ์</td>
+              <td>น้อยกว่า 18.5</td>
+              <td>เสี่ยงสูง</td>
+            </tr>
+            <tr id="2">
+              <td>สมส่วน</td>
+              <td>18.6-22.9</td>
+              <td>มีความเสี่ยงน้อยที่สุด</td>
+            </tr>
+            <tr id="3">
+              <td>น้ำหนักเกิน</td>
+              <td>23-24.9</td>
+              <td>มีความเสี่ยงมากกว่าคนปกติ</td>
+            </tr>
+            <tr id="4">
+              <td>โรคอ้วน</td>
+              <td>25-29.9</td>
+              <td>ยังมีเสี่ยงต่อการเกิดโรค</td>
+            </tr>
+            <tr id="5">
+              <td>โรคอ้วนอันตราย</td>
+              <td>มากกว่า 30</td>
+              <td>เสี่ยงต่อการเกิดโรค</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+    
+  </div>
+
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
